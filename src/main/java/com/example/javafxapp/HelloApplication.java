@@ -70,20 +70,21 @@ public class HelloApplication extends Application {
         alertDialog.setTitle("My first desktop app");
         alertDialog.setHeaderText("Learning javafx app");
         alertDialog.setContentText("I am a begineer but soon i will be a pro and will make desktop games");
+        alertDialog.show();
 
         // customizable dialog
-        ButtonType yesbtn = new ButtonType("Yes");
-        ButtonType nobtn = new ButtonType("No");
-        alertDialog.getButtonTypes().setAll(yesbtn , nobtn);    // replace previous buttons, whereass addAll will add them keeping the previosu one
-
-        Optional<ButtonType> clickedButton = alertDialog.showAndWait();
-
-        if (clickedButton.isPresent() && clickedButton.get() == yesbtn){
-            System.out.println("yes button is clikced");
-        } else if (clickedButton.isPresent() && clickedButton.get() == nobtn) {
-            System.out.println("no button is clicked");
-
-        }
+//        ButtonType yesbtn = new ButtonType("Yes");
+//        ButtonType nobtn = new ButtonType("No");
+//        alertDialog.getButtonTypes().setAll(yesbtn , nobtn);    // replace previous buttons, whereass addAll will add them keeping the previosu one
+//
+//        Optional<ButtonType> clickedButton = alertDialog.showAndWait();
+//
+//        if (clickedButton.isPresent() && clickedButton.get() == yesbtn){
+//            System.out.println("yes button is clikced");
+//        } else if (clickedButton.isPresent() && clickedButton.get() == nobtn) {
+//            System.out.println("no button is clicked");
+//
+//        }
     }
 
     public void stop() throws Exception{
